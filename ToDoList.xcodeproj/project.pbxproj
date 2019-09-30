@@ -14,6 +14,7 @@
 		5B1E8859234093D7001C8892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B1E8857234093D7001C8892 /* LaunchScreen.storyboard */; };
 		5B1E88612340972E001C8892 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E88602340972E001C8892 /* ToDo.swift */; };
 		5B1E88652340994F001C8892 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E88642340994F001C8892 /* ToDoTableViewController.swift */; };
+		5B1E8868234299F2001C8892 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1E8867234299F2001C8892 /* ToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5B1E885A234093D7001C8892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B1E88602340972E001C8892 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		5B1E88642340994F001C8892 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		5B1E8867234299F2001C8892 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				5B1E88642340994F001C8892 /* ToDoTableViewController.swift */,
+				5B1E8867234299F2001C8892 /* ToDoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1E8868234299F2001C8892 /* ToDoViewController.swift in Sources */,
 				5B1E88612340972E001C8892 /* ToDo.swift in Sources */,
 				5B1E88652340994F001C8892 /* ToDoTableViewController.swift in Sources */,
 				5B1E884D234093D6001C8892 /* AppDelegate.swift in Sources */,
