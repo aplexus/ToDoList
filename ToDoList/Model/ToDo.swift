@@ -13,6 +13,14 @@ struct ToDo {
     var isComplete: Bool
     var date: Date
     var notes: String?
+    
+   // Свойство которое вычисляет дату и задает стили отображения
+    static let dueDateFormatter: DateFormatter = {
+        let formatter = DateFormatter ()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter
+    } ()
 
 static func loadToDos() -> [ToDo]? {
   return loadSampleToDos()
@@ -25,4 +33,5 @@ static func loadToDos() -> [ToDo]? {
         ToDo (title: "сходить в аптеку", isComplete: false, date: Date (), notes: nil)
         ]
     }
+    
 }

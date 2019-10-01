@@ -132,6 +132,9 @@
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="V8o-vh-VaX">
                                                     <rect key="frame" x="16" y="11" width="343" height="178"/>
+                                                    <connections>
+                                                        <action selector="datePickerChange:" destination="p2i-0g-chi" eventType="primaryActionTriggered" id="wog-X7-ZkI"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -185,7 +188,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="0o5-HN-JnU">
                             <connections>
-                                <segue destination="LDR-xi-d2F" kind="unwind" unwindAction="unwindSaveWithSaveSegue:" id="emD-hI-gvE"/>
+                                <segue destination="LDR-xi-d2F" kind="unwind" identifier="saveUnwind" unwindAction="unwindSaveWithSaveSegue:" id="emD-hI-gvE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -201,7 +204,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLc-Sf-xJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="LDR-xi-d2F" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="151"/>
+            <point key="canvasLocation" x="1958" y="151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p0t-hq-RrX">

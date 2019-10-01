@@ -91,6 +91,11 @@ class ToDoTableViewController: UITableViewController {
         
     }
     @IBAction func unwindSave(saveSegue: UIStoryboardSegue) {
+        guard let sourceViewController = saveSegue.source as? ToDoViewController else {return}
+        guard let todo = sourceViewController.todo else {return}
         
+        let newIndexPath = IndexPath (row: todos.count, section: 0)
+        todos.append(todo)
+        tableView.insertRows(at: [newIndexPath], with: .automatic)
     }
 }
